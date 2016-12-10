@@ -1,0 +1,11 @@
+[[plugins]] 
+repo = 'Shougo/neocomplete.vim'
+on_i = 1
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = ['python']
+
+[[plugins]]
+repo = 'nvie/vim-flake8'
+on_ft = ['python']
