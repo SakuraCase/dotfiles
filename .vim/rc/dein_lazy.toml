@@ -2,10 +2,12 @@
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
 
+# [git submodule update --init] をする必要がある
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
 on_ft = ['python']
 
+# flake8が必要
 [[plugins]]
 repo = 'nvie/vim-flake8'
 on_ft = ['python']

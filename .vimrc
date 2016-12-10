@@ -1,7 +1,5 @@
 " --- プラグイン管理 ---
 " 参考:http://qiita.com/delphinus/items/00ff2c0ba972c6e41542
-
-
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.vim/dein')
 " dein.vim 本体
