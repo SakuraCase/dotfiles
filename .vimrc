@@ -18,7 +18,6 @@ if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
 
     " プラグインリストを収めた TOML ファイル
-    " 予め TOML ファイル（後述）を用意しておく
     let g:rc_dir    = expand('~/.vim/rc')
     let s:toml      = g:rc_dir . '/dein.toml'
     let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
@@ -114,5 +113,18 @@ let g:jedi#auto_vim_configuration = 0
 
 
 " --- vim-flake8設定 ---
+" エラー箇所を色付け
 let g:flake8_show_in_file=1
-let g:flake8_show_quickfix=0
+" エラー詳細の表示とウィンドの高さ
+let g:flake8_show_quickfix=1
+let g:flake8_quickfix_height=3
+
+
+" --- Unit.vim設定 ---
+" insertモードで起動
+let g:unite_enable_start_insert=1
+
+" key-mappings
+nnoremap <Space>f :<C-u>Unite file<CR>
+nnoremap <Space>y :<C-u>Unite history/yank<CR>
+nnoremap <Space>m :<C-u>Unite mark<CR>

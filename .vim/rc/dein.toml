@@ -1,5 +1,14 @@
 [[plugins]] 
 repo = 'Shougo/dein.vim'
 
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+
+[[plugins]]
+repo = 'tacroe/unite-mark'
+
 [[plugins]] 
 repo = 'Yggdroot/indentLine'
