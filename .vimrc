@@ -9,7 +9,7 @@ let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 if &runtimepath !~# '/dein.vim'
 	if !isdirectory(s:dein_repo_dir)
     	execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-    endif
+	endif
     execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
@@ -33,7 +33,7 @@ endif
 
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
-    call dein#install()
+	call dein#install()
 endif
 
 
@@ -84,7 +84,7 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+	return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -100,7 +100,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
+	let g:neocomplete#sources#omni#input_patterns = {}
 endif
 
 
@@ -120,7 +120,7 @@ let g:flake8_show_quickfix=1
 let g:flake8_quickfix_height=3
 
 
-" --- Unit.vim設定 ---
+" --- Unite.vim設定 ---
 " insertモードで起動
 let g:unite_enable_start_insert=1
 
