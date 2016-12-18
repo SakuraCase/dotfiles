@@ -128,3 +128,4 @@ let g:unite_enable_start_insert=1
 nnoremap <Space>f :<C-u>Unite file<CR>
 nnoremap <Space>y :<C-u>Unite history/yank<CR>
 nnoremap <Space>m :<C-u>Unite mark<CR>
+nnoremap <Space>b :<C-u>Unite buffer<CR>
