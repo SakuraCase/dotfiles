@@ -549,11 +549,18 @@ if version >= 508 || !exists("did_python_syn_inits")
   delcommand HiLink
 endif
 
-" selfの追加設定
-syn keyword pythonSelf self
-syn region pythonDocString start=/"""/ end=/"""/
 
-hi link pythonSelf Statement
+" selfの追加設定
+syn keyword pythonSelf self 
+hi link pythonSelf Special
+
+" DocStringの追加設定
+syn region pythonDocString start=/"""/ end=/"""/
 hi link pythonDocString Comment
+
+" None, True, Falseの色を変更
+syn keyword pythonOverwrite None True False
+hi link pythonOverwrite Type
+
 
 let b:current_syntax = "python"

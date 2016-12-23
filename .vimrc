@@ -55,6 +55,7 @@ set number
 syntax on
 set t_Co=256
 colorscheme jellybeans
+let python_highlight_builtin_funcs = 1
 
 
 " --- neocomplete設定 ---
@@ -114,7 +115,8 @@ let g:jedi#auto_vim_configuration = 0
 
 " --- vim-flake8設定 ---
 " エラー箇所を色付け
-let g:flake8_show_in_file=1
+" let g:flake8_show_in_file=1
+"
 " エラー詳細の表示とウィンドの高さ
 let g:flake8_show_quickfix=1
 let g:flake8_quickfix_height=3
