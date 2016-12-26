@@ -29,8 +29,6 @@ let python_highlight_builtin_funcs = 1
 " 参考:http://vi.stackexchange.com/questions/2350/how-to-map-alt-key
 execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
-execute "set <M-p>=\ep"
-execute "set <M-n>=\en"
 execute "set <M-a>=\ea"
 execute "set <M-h>=\eh"
 execute "set <M-m>=\em"
@@ -41,27 +39,27 @@ execute "set <M-l>=\el"
 inoremap <Esc> <Esc><Esc>
 set timeout ttimeoutlen=50
 
-" Alt-jで１ページ下 Alt-kで上
-nnoremap <M-j> <C-f>
-nnoremap <M-k> <C-b>
+" Ctrl-jで１ページ下 Ctrl-kで上
+nnoremap <C-j> <C-f>
+nnoremap <C-k> <C-b>
 
-" Ctrl-jで1段落下 Ctrl-kで上
-nnoremap <C-j> }
-nnoremap <C-k> {
+" Alt-jで1段落下 Alt-kで上
+nnoremap <M-j> }
+nnoremap <M-k> {
 
-" Alt-nで半ページ下  Alt-pで上
-nnoremap <M-p> <C-u>
-nnoremap <M-n> <C-d>
+" Ctrl-nで半ページ下  Ctrl-pで上
+nnoremap <C-p> <C-u>
+nnoremap <C-n> <C-d>
 
-" Ctrl-hでページの上 Ctrl-mで真ん中 Ctrl-lで下
-nnoremap <C-h> H
-nnoremap <C-m> M
-nnoremap <C-l> L
+" Alt-hでページの上 Alt-mで真ん中 Alt-lで下
+nnoremap <M-h> H
+nnoremap <M-m> M
+nnoremap <M-l> L
 
-" Alt-hで現在の行を画面一番上 Alt-mで画面中心 Alt-lで画面下
-nnoremap <M-h> zt
-nnoremap <M-m> zz
-nnoremap <M-l> zb
+" Ctrl-hで現在の行を画面一番上 Ctrl-mで画面中心 Ctrl-lで画面下
+nnoremap <C-h> zt
+nnoremap <C-m> zz
+nnoremap <C-l> zb
 
 " Shift-hで行の左端 Shift-lで右端
 nnoremap <S-h> ^
