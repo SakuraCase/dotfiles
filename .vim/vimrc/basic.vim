@@ -32,6 +32,9 @@ execute "set <M-k>=\ek"
 execute "set <M-p>=\ep"
 execute "set <M-n>=\en"
 execute "set <M-a>=\ea"
+execute "set <M-h>=\eh"
+execute "set <M-m>=\em"
+execute "set <M-l>=\el"
 
 " insertから出てすぐAlt設定キーを押すと意図しない動作をすることと、
 " normalモードでESC押すとAltキーと同じ動作をすることの対策
@@ -42,6 +45,10 @@ set timeout ttimeoutlen=50
 nnoremap <M-j> <C-f>
 nnoremap <M-k> <C-b>
 
+" Ctrl-jで1段落下 Ctrl-kで上
+nnoremap <C-j> }
+nnoremap <C-k> {
+
 " Alt-nで半ページ下  Alt-pで上
 nnoremap <M-p> <C-u>
 nnoremap <M-n> <C-d>
@@ -51,9 +58,10 @@ nnoremap <C-h> H
 nnoremap <C-m> M
 nnoremap <C-l> L
 
-" Ctrl-jで1段落下 Ctrl-kで上
-nnoremap <C-j> }
-nnoremap <C-k> {
+" Alt-hで現在の行を画面一番上 Alt-mで画面中心 Alt-lで画面下
+nnoremap <M-h> zt
+nnoremap <M-m> zz
+nnoremap <M-l> zb
 
 " Shift-hで行の左端 Shift-lで右端
 nnoremap <S-h> ^
