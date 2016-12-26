@@ -31,27 +31,33 @@ execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
 execute "set <M-p>=\ep"
 execute "set <M-n>=\en"
+execute "set <M-a>=\ea"
 
-" insertから出てすぐAlt設定キーを押すと意図しない動作をすることの対策
+" insertから出てすぐAlt設定キーを押すと意図しない動作をすることと、
+" normalモードでESC押すとAltキーと同じ動作をすることの対策
 inoremap <Esc> <Esc><Esc>
+set timeout ttimeoutlen=50
 
 " Alt-jで１ページ下 Alt-kで上
-noremap <M-j> <C-f>
-noremap <M-k> <C-b>
+nnoremap <M-j> <C-f>
+nnoremap <M-k> <C-b>
 
 " Alt-nで半ページ下  Alt-pで上
-noremap <M-p> <C-u>
-noremap <M-n> <C-d>
+nnoremap <M-p> <C-u>
+nnoremap <M-n> <C-d>
 
 " Ctrl-hでページの上 Ctrl-mで真ん中 Ctrl-lで下
-noremap <C-h> H
-noremap <C-m> M
-noremap <C-l> L
+nnoremap <C-h> H
+nnoremap <C-m> M
+nnoremap <C-l> L
 
 " Ctrl-jで1段落下 Ctrl-kで上
-noremap <C-j> }
-noremap <C-k> {
+nnoremap <C-j> }
+nnoremap <C-k> {
 
 " Shift-hで行の左端 Shift-lで右端
-noremap <S-h> ^
-noremap <S-l> $
+nnoremap <S-h> ^
+nnoremap <S-l> $
+
+" aマークに移動
+nnoremap <M-a> 'a
