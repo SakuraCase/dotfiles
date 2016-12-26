@@ -48,8 +48,15 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
-" 行番号を表示
-set number
+" CTRL-kとjで画面１ページ上下
+noremap <C-k> <C-b>
+noremap <C-j> <C-f>
+
+" ファイル別設定
+augroup fileTypeIndent
+	autocmd!
+	autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2
+augroup END
 
 " color
 syntax on
