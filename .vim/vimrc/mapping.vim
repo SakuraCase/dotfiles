@@ -51,9 +51,5 @@ nnoremap sqN ?<C-u>\("[^"]*"\\|'[^']*'\\|`[^`]*`\)<CR>
 nnoremap scn /<C-u>class<CR>
 nnoremap scN ?<C-u>class<CR>
 
-" defを検索
-nnoremap sdn /<C-u>def<CR>
-nnoremap sdN ?<C-u>def<CR>
-
 " 置換
 nnoremap sr :%s/

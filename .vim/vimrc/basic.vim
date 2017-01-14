@@ -2,6 +2,11 @@
 filetype on
 filetype plugin on
 
+" enc設定
+set encoding=utf-8
+set fileencoding=utf-8
+set fileformats=unix,dos,mac
+
 " tab,indentに関する設定
 set noexpandtab
 set tabstop=4

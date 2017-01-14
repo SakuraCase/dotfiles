@@ -1,10 +1,8 @@
 #!/bin/sh
 
+files=(.vimrc .vim/colors .vim/rc .vim/syntax .vim/vimrc .config/flake8)
 path=$(cd $(dirname $0) && pwd)
 
-ln -sf $path/.vimrc ~/.vimrc
-ln -sf $path/.vim/colors ~/.vim/
-ln -sf $path/.vim/rc ~/.vim/
-ln -sf $path/.vim/syntax ~/.vim/
-ln -sf $path/.vim/vimrc ~/.vim/
-ln -sf $path/.config/flake8 ~/.config/
+for file in ${files[@]}; do
+	ln -sf $path/$file ~/$file
+done
