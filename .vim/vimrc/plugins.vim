@@ -109,3 +109,13 @@ let g:unite_enable_start_insert=1
 nnoremap <Space>f :<C-u>Unite file<CR>
 nnoremap <Space>y :<C-u>Unite history/yank<CR>
 nnoremap <Space>b :<C-u>Unite buffer<CR>
+nnoremap <Space>g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+
+" unite grepにjvgrepを使う
+" 参考:http://qiita.com/shibukk/items/b195bcb362b9489d1d09
+if executable('jvgrep')
+	let g:unite_source_grep_command = 'jvgrep'
+	let g:unite_source_grep_default_opts = '-r'
+	let g:unite_source_grep_recursive_opt = '-R'
+endif
+
