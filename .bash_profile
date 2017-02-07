@@ -1,7 +1,9 @@
 # プロンプト設定
 # PS1='\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ '
 
+
 # カンマ区切りのファイルを整形表示
+# sedは2つないとうまくいかない時がある
 function csvless {
-  head -n 10000 $1| sed 's/,,/,Nan,/g'| column -s, -t| /usr/bin/less -S
+  head -n 10000 $1| sed 's/,,/, ,/g'| sed 's/,,/, ,/g'| column -s, -t| /usr/bin/less -S
 }

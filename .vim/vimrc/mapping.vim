@@ -35,8 +35,9 @@ nnoremap <C-l> zb
 " sマッピングの削除
 nnoremap s <Nop>
 
-" aマークに移動
+" .マークに移動
 nnoremap sa 'a
+nnoremap sm 'm
 
 "  (, {, [ を検索  b=block
 "  nでカーソルより後ろ Nでカーソルより前
