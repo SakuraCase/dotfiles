@@ -1,3 +1,4 @@
+" commonのものを上書き
 "  (, {, [ を検索  b=block
 "  nでカーソルより後ろ Nでカーソルより前
 nnoremap sbn /<C-u>(\(|\{|\[)<CR>
@@ -7,5 +8,35 @@ nnoremap sbN ?<C-u>(\(|\{|\[)<CR>
 nnoremap sqn /<C-u>("[^"]*"|'[^']*'|`[^`]*`)<CR>
 nnoremap sqN ?<C-u>("[^"]*"|'[^']*'|`[^`]*`)<CR>
 
-" Eclipseの置換を設定
-"nnoremap sr :%s/
+
+" --- eclipseの機能 ---
+" 参考: http://vrapper.sourceforge.net/documentation/?topic=commandline_commands
+" 参考: https://github.com/basyura/vrapperrc/blob/master/vrapperrc
+
+" 現在のファイルの階層を開く
+eclipseuiaction OpenStructure org.eclipse.jdt.ui.navigate.java.open.structure
+nnoremap <Space>s :<C-u>OpenStructure<CR> 
+
+" リソースを開く
+eclipseuiaction OpenRes org.eclipse.ui.navigate.openResource
+nnoremap <Space>f :<C-u>OpenRes<CR>
+
+" タブの一覧
+nnoremap <Space>t :<C-u>files<CR>
+
+"フォーマットを整える
+eclipseaction Format org.eclipse.jdt.ui.edit.text.java.format
+nnoremap <F7> :Format<CR>
+
+" grep
+eclipseaction SearchRef  org.eclipse.jdt.ui.edit.text.java.search.references.in.project
+noremap <Space>g :<C-u>SearchRef<C-m>
+
+
+" TODO
+" memo: http://qiita.com/Ted-HM/items/d9d304eb8aa59ad8eaba
+" rename
+" 定義へ移動
+" 参照を検索
+" getter setter
+

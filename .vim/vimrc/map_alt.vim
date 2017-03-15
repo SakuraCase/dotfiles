@@ -1,4 +1,3 @@
-" --- マッピング ---
 " Altキーを使えるように設定
 set timeout ttimeoutlen=50
 
@@ -18,3 +17,5 @@ nnoremap <M-k> {
 nnoremap <M-h> H
 nnoremap <M-m> M
 nnoremap <M-l> L
+
+

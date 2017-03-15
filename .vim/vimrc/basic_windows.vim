@@ -10,4 +10,3 @@ set fileformats=unix,dos,mac
 " 行数表示
 set number
 
-
