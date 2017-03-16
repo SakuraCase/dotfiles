@@ -13,16 +13,20 @@ nnoremap sqN ?<C-u>("[^"]*"|'[^']*'|`[^`]*`)<CR>
 " 参考: http://vrapper.sourceforge.net/documentation/?topic=commandline_commands
 " 参考: https://github.com/basyura/vrapperrc/blob/master/vrapperrc
 
-" 現在のファイルの階層を開く
+" getter/setter
+eclipseaction CreateGetterSetter org.eclipse.jdt.ui.edit.text.java.create.getter.setter
+nnoremap gs :CreateGetterSetter<CR>
+
+" タブの一覧
+nnoremap <Space>t :<C-u>files<CR>
+
+" クラスやメソッドの階層表示
 eclipseuiaction OpenStructure org.eclipse.jdt.ui.navigate.java.open.structure
 nnoremap <Space>s :<C-u>OpenStructure<CR> 
 
 " リソースを開く
 eclipseuiaction OpenRes org.eclipse.ui.navigate.openResource
 nnoremap <Space>f :<C-u>OpenRes<CR>
-
-" タブの一覧
-nnoremap <Space>t :<C-u>files<CR>
 
 "フォーマットを整える
 eclipseaction Format org.eclipse.jdt.ui.edit.text.java.format
@@ -38,5 +42,4 @@ noremap <Space>g :<C-u>SearchRef<C-m>
 " rename
 " 定義へ移動
 " 参照を検索
-" getter setter
 
