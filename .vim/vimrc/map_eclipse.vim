@@ -32,14 +32,14 @@ nnoremap <Space>f :<C-u>OpenRes<CR>
 eclipseaction Format org.eclipse.jdt.ui.edit.text.java.format
 nnoremap <F7> :Format<CR>
 
-" grep
-eclipseaction SearchRef  org.eclipse.jdt.ui.edit.text.java.search.references.in.project
-noremap <Space>g :<C-u>SearchRef<C-m>
-
 
 " TODO
+" 参照を検索
+"eclipseaction SearchRef  org.eclipse.jdt.ui.edit.text.java.search.references.in.project
+"noremap <Space>g :<C-u>SearchRef<C-m>
+
 " memo: http://qiita.com/Ted-HM/items/d9d304eb8aa59ad8eaba
 " rename
 " 定義へ移動
-" 参照を検索
+" grep
 
