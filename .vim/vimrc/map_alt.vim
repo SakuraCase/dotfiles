@@ -17,5 +17,3 @@ nnoremap <M-k> {
 nnoremap <M-h> H
 nnoremap <M-m> M
 nnoremap <M-l> L
-
-
