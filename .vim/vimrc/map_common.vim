@@ -15,9 +15,9 @@ nnoremap s <Nop>
 nnoremap sa 'a
 nnoremap sm 'm
 
-" snで半ページ下  spで上
-nnoremap sn <C-d>
-nnoremap sp <C-u>
+" sjで半ページ下  skで上
+nnoremap sj <C-d>
+nnoremap sk <C-u>
 
 "  (, {, [ を検索  b=block
 "  nでカーソルより後ろ Nでカーソルより前
