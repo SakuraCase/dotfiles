@@ -7,6 +7,3 @@ set fileencoding=utf-8
 set fileencodings=utf-8,cp932
 set fileformats=unix,dos,mac
 
-" 行数表示
-set number
-
