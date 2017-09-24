@@ -1,6 +1,6 @@
 " --- vim設定 --- 
 " tab,indentに関する設定
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
